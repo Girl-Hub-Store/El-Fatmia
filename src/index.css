@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-deep-teal: #0F303A;
+  --color-deep-teal-light: #1a4a57;
+  --color-deep-teal-lighter: #255e6e;
+  --color-ivory: #F7F5EF;
+  --color-ivory-dark: #ede9df;
+  --color-champagne: #D4AF7C;
+  --color-champagne-dark: #b8924a;
+  --color-champagne-light: #e8c99a;
+  --color-charcoal: #2E2E2E;
+  --color-charcoal-light: #555555;
+}
+
+html {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F7F5EF;
+  color: #2E2E2E;
+  font-family: 'Cairo', sans-serif;
+}
+
+* {
+  font-family: 'Cairo', sans-serif;
+}
+
+.carousel-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.header-blur {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Smooth transitions for interactive elements */
+button, a {
+  transition: all 0.2s ease;
+}
+
+/* Custom focus styles */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  ring: none;
+}
+
+/* Footer accordion */
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}

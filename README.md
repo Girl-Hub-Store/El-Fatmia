@@ -1,15 +1,17 @@
-# El-Fatimia — GitHub Pages
+# El Fatimia — GitHub Pages
 
-هذه النسخة جاهزة للنشر على GitHub Pages.
+نسخة Static جاهزة للنشر على GitHub Pages، مبنية على تصميم ملف Figma/Make المرفوع.
 
 ## النشر
-1. أنشئ Repository جديد على GitHub.
-2. ارفع كل محتويات هذا المجلد إلى الفرع `main`.
-3. من Settings → Pages اختر GitHub Actions أو Deploy from branch حسب إعداد المستودع.
+1. ارفع محتويات المجلد إلى Repository على GitHub.
+2. من Settings → Pages اختر Deploy from a branch.
+3. اختر `main` و`/root`.
+4. احفظ وانتظر النشر.
 
-> لا تفتح `index.html` بالنقر المزدوج كطريقة اختبار أساسية؛ الموقع يستخدم ES Modules وملفات CDN، والأفضل اختباره عبر GitHub Pages أو سيرفر محلي.
+الموقع لا يحتاج Node أو Build؛ `index.html` هو الموقع كاملًا.
 
-## تشغيل محلي
-إذا كان Python مثبتًا:
-`python -m http.server 8080`
-ثم افتح `http://localhost:8080`.
+## ملاحظات
+- التصميم RTL ومتجاوب للموبايل والكمبيوتر.
+- نموذج طلب عرض السعر يجهز رسالة ويفتح WhatsApp مباشرة.
+- بيانات التواصل المستخدمة مأخوذة من الموقع العام للفاطمية.
+- الصور الحالية من Unsplash كصور تجريبية، ويمكن استبدالها بصور الفاطمية الحقيقية.

@@ -1,17 +1,15 @@
-# الفاطمية للستائر — GitHub Pages
+# El-Fatimia — GitHub Pages
 
-هذا هو موقع الويب المبني من تصميم المشروع الموجود في Figma Make.
+هذه النسخة جاهزة للنشر على GitHub Pages.
 
-## تشغيل محليًا
+## النشر
+1. أنشئ Repository جديد على GitHub.
+2. ارفع كل محتويات هذا المجلد إلى الفرع `main`.
+3. من Settings → Pages اختر GitHub Actions أو Deploy from branch حسب إعداد المستودع.
 
-```bash
-npm install
-npm run dev
-```
+> لا تفتح `index.html` بالنقر المزدوج كطريقة اختبار أساسية؛ الموقع يستخدم ES Modules وملفات CDN، والأفضل اختباره عبر GitHub Pages أو سيرفر محلي.
 
-## النشر على GitHub Pages
-
-1. أنشئ Repository على GitHub.
-2. ارفع محتويات هذا المجلد إلى فرع `main`.
-3. من `Settings > Pages` اختر `GitHub Actions` كمصدر النشر.
-4. كل Push إلى `main` سيبني الموقع وينشره تلقائيًا.
+## تشغيل محلي
+إذا كان Python مثبتًا:
+`python -m http.server 8080`
+ثم افتح `http://localhost:8080`.
